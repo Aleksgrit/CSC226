@@ -12,10 +12,10 @@ def random_function():
     
     if wownumagain < wowitsnum:
         print("Oops! The second number must be larger than the first one.")
-        random_function()
+        return random_function()
     elif wownumagain == wowitsnum:
         print("NO THAT IS INCORRECT, PEBKAC")
-        random_function()  
+        return random_function()  
     else:
         print("Wow, well done! Loading your prize...")
         random_num = random.randint(wowitsnum, wownumagain)
