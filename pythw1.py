@@ -13,7 +13,7 @@ def random_function():
     if wownumagain < wowitsnum:
         print("Oops! The second number must be larger than the first one.")
         random_function()
-    if wownumagain == wowitsnum:
+    elif wownumagain == wowitsnum:
         print("NO THAT IS INCORRECT, PEBKAC")
         random_function()  
     else:
