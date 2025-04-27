@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #userinput {
+            width: 50%;
+        }
+    </style>
+    </head>
+<body>
+    <input type="text" id="userinput">
+    <button id="push">DoNotClickMe</button>
+    <div id="output"></div>
+
+    <script>
+        document.getElementById("push").addEventListener("click", function() {
+            var inputValue = document.getElementById("userinput").value;
+            document.getElementById("output").textContent = inputValue;
+            document.getElementById("userinput").style.backgroundColor = "yellow";
+        });
+    </script>
+</body>
+</html>
